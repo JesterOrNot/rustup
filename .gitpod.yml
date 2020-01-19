@@ -1,6 +1,5 @@
 tasks:
   - init: >
-      rustup use nightly &&
       cargo build &&
       mkdir home &&
       RUSTUP_HOME=home CARGO_HOME=home target/debug/rustup-init --no-modify-path -y
