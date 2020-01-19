@@ -1,3 +1,3 @@
 FROM gitpod/workspace-full
 USER gitpod
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh;
+RUN curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --default-toolchain=nightly
