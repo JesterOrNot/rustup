@@ -1,2 +1,3 @@
 FROM gitpod/workspace-full
-RUN rustup use nightly
+USER gitpod
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh; rustup use nightly
