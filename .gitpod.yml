@@ -1,7 +1,6 @@
-image:
-  file: .gitpod.Dockerfile
 tasks:
-  - init: >
+  - before: rustup use nightly
+    init: >
       cargo build &&
       mkdir home &&
       RUSTUP_HOME=home CARGO_HOME=home target/debug/rustup-init --no-modify-path -y
